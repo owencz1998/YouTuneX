@@ -1,7 +1,7 @@
 {
-  "name": "Soundrex | music player",
-  "short_name": "Soundrex",
-  "description": "Listen and download unlimited songs for free without any ads only on Soundrex.",
+  "name": "YouTuneX | music player",
+  "short_name": "YouTuneX",
+  "description": "Listen and download unlimited songs for free without any ads only on YouTuneX.",
   "icons": [
     {
       "src": "/icons/maskable_icon_x192.png",
@@ -51,7 +51,7 @@
       "purpose": "any"
     }
   ],
-  "start_url": "https://soundrex.netlify.app/home",
+  "start_url": "https://youtune-x.netlify.app/home",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

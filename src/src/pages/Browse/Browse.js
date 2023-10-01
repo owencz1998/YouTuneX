@@ -1,5 +1,5 @@
-import {memo, useEffect} from "react";
-import {Route, Switch, useParams} from "react-router-dom";
+import { useEffect } from "react";
+import { Route, Switch, useParams } from "react-router-dom";
 
 import AlbumPlaylistPage from "./Albums-Playlists";
 import ArtistPage from "./Artist";

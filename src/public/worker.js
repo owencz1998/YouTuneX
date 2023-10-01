@@ -1,4 +1,4 @@
-let CACHE_NAME = "soundrex";
+let CACHE_NAME = "YouTuneX";
 let urlsToCache = ["/", "/home", "/login", "/signup"];
 
 // Install a service worker
@@ -27,7 +27,7 @@ self.addEventListener("fetch", event => {
 
 // Update a service worker
 self.addEventListener("activate", event => {
-  let cacheWhitelist = ["soundrex"];
+  let cacheWhitelist = ["YouTuneX"];
   event.waitUntil(
     caches.keys().then(cacheNames => {
       return Promise.all(
