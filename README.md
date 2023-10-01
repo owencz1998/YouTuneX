@@ -12,12 +12,10 @@ I'm building off a old code due to learning and I hope I can get this working co
 
 ##  Features
 
-- 🚫 No ads, thanks to the use of public YT Music APIs
-- ⬇️ Downloadable tracks
-- 🖥️ Cross-platform  support using web develepment
-- 🪶 Small size & less data usage
-- 🕵️ Anonymous/guest login
-- 🕒 Time synced lyrics
-- ✋ No telemetry, diagnostics or user data collection
-- 📖 Open source/libre software
+-  No ads, thanks to the use of public YT  Music APIs
+- Downloadable tracks
+- Cross-platform  support using web develepment
+-  lyrics
+-  No telemetry, diagnostics or user data collection
+- Open source/libre software
 
