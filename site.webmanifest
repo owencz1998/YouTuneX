@@ -1,7 +1,7 @@
 {
   "name": "YouTuneX | music player",
-  "short_name": "Soundrex",
-  "description": "Listen and download unlimited songs for free without any ads only on Soundrex.",
+  "short_name": "YouTuneX",
+  "description": "Listen and download unlimited songs for free without any ads only on YouTuneX.",
   "icons": [
     {
       "src": "/icons/maskable_icon_x192.png",
