@@ -1,4 +1,4 @@
-## YoutuneX
+## YouTuneX
 
 WEBLINK: https://youtune-x.netlify.app/
 
