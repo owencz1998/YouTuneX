@@ -115,7 +115,7 @@ const LoginPage = ({
         setLoggedInSuccessfully(false);
         // await toast.promise(
         const {data: loginData} = await axios.post(
-          "https://soundrex.onrender.com/auth/login",
+          "https://youtunex.onrender.com/auth/login",
           {
             method: "POST",
             headers: {
@@ -187,7 +187,7 @@ const LoginPage = ({
         <Logo className={styles.logo} />
       </Header>
       <Content className="flex-column flex-center">
-        <p className=" text-large white">To continue, log in to Soundrex.</p>
+        <p className=" text-large white">To continue, log in to YouTuneX.</p>
         <form className="form mg-t-3" onSubmit={loginFormSubmitHandler}>
           {topBoxMessage && (
             <div className="error-msg-container mg-b-2">
@@ -249,7 +249,7 @@ const LoginPage = ({
         <Link to="/signup" className={styles["signup_redirect-button-link"]}>
           <Button
             className={`${styles["form__button"]} ${styles["signup_redirect-button"]}`}>
-            Sign up for soundrex
+            Sign up for YouTuneX
           </Button>
         </Link>
         {/* <ToastContainer
