@@ -202,7 +202,7 @@ const LoginPage = ({
             type="email"
             control="input"
             emptyAndHasError={emailValue?.length === 0 && emailHasError}
-            emptyAndHasErrorMessage={"Please enter your Soundrex email address"}
+            emptyAndHasErrorMessage={"Please enter your YouTuneX email address"}
             hasError={emailHasError}
             hasErrorMessage={"This email is invalid."}
             onChange={emailInputChangeHanlder}
