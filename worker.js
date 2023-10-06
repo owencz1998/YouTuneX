@@ -1,5 +1,5 @@
 let CACHE_NAME = "YouTuneX";
-let urlsToCache = ["/", "/home", "/login", "/signup"];
+let urlsToCache = ["/", "/home"];
 
 // Install a service worker
 self.addEventListener("install", event => {
