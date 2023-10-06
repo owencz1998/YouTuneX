@@ -6,7 +6,7 @@ import { Application } from 'https://deno.land/x/oak@v11.1.0/mod.ts';
  app.use(async (ctx, next) => { 
      try { 
          await ctx.send({ 
-             root: `${Deno.cwd()}/src/public/`, 
+             root: `${Deno.cwd()}/`, 
              index: 'index.html', 
          }); 
      } catch { 
