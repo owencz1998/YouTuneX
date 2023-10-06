@@ -24,7 +24,7 @@ export const fetcher = (
           render() {
             return "Loading...";
           },
-          theme: "dark",
+          theme: "light",
         },
         success: {
           render() {
