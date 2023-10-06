@@ -1,76 +1,34 @@
-import {useRef, useContext, useEffect, useState, Fragment} from "react";
+import { Fragment, useEffect } from "react";
 import {
-  Switch,
-  Route,
   Redirect,
-  useLocation,
-  useHistory,
+  Route,
+  Switch
 } from "react-router-dom";
-import {ToastContainer} from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
-import AuthContext from "./context/AuthContext";
 // import SongContextProvider from "./context/SongContextProvider";
 import PlayerContextProvider from "./context/ContextProvider";
 
-import Layout from "./components/Layout/Layout";
-import Header from "./components/Layout/Header/Header";
 import Content from "./components/Layout/Content/Content";
+import Header from "./components/Layout/Header/Header";
+import Layout from "./components/Layout/Layout";
 import Navigation from "./components/Navigation/Navigation";
 
 // import Loading from "./components/UI/Loading/Loading";
 import Spinner from "./components/UI/Loading/Spinner";
 // import SearchNavigation from "./components/UI/SearchNavigation/SearchNavigation";
 
-import HomePage from "./pages/Home/Home";
-import GenresPage from "./pages/Genres/Genres";
-import SearchPage from "./pages/Search/Search";
 import BrowsePage from "./pages/Browse/Browse";
+import GenresPage from "./pages/Genres/Genres";
+import HomePage from "./pages/Home/Home";
+import SearchPage from "./pages/Search/Search";
 // import SongPage from "./pages/Song/Song";
-import SongPageRenderer from "./pages/Song/SongPageRenderer";
 import FavouritesPage from "./pages/Home/Favourites";
+import SongPageRenderer from "./pages/Song/SongPageRenderer";
 
-import SignupPage from "./pages/Auth/Signup";
-import LoginPage from "./pages/Auth/Login";
 
-import SongWrapper from "./pages/Song/SongWrapper";
 import Popup from "./components/UI/Popup/Popup";
-
-const App = () => {
-  const rootElementRef = useRef();
-
-  const [previousPageUrl, setPreviousPageUrl] = useState(null);
-
-  const [initialUrl, setInitialUrl] = useState(null);
-
-  const [toastPosition, setToastPosition] = useState("bottom-center");
-
-  const [isLoggingin, setIsLoggingin] = useState(false);
-
-  const location = useLocation();
-
-  const history = useHistory();
-
-  const AuthCtx = useContext(AuthContext);
-  const {
-    // username,
-    token,
-    isAuth,
-    login,
-    logout,
-    authLoading,
-    editAuthConf,
-    setIsAuthLoading,
-    setAutoLogout,
-    initLibrary,
-    // pushToLibrary,
-    // removeFromLibrary,
-    // library,
-    addToFavouritesHandler,
-    removeFromFavouritesHandler,
-
-    topBoxMessage,
-    setTopBoxMessage,
-  } = AuthCtx;
+import SongWrapper from "./pages/Song/SongWrapper";
 
   useEffect(() => {
     history.listen(location => {

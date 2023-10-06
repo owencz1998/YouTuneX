@@ -1,14 +1,13 @@
-import {render} from "react-dom";
+import { render } from "react-dom";
+import { QueryClientProvider } from "react-query";
 import Root from "./App";
 import "./styles/index.scss";
-import {QueryClientProvider} from "react-query";
 // import {ReactQueryDevtools} from "react-query/devtools";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 
+import { BrowserRouter } from "react-router-dom";
 import client from "./react-query-client";
-import {BrowserRouter} from "react-router-dom";
 
-import AuthContextProvider from "./context/AuthContextProvider";
 
 import "react-toastify/dist/ReactToastify.css";
 
