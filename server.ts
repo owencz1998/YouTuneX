@@ -19,7 +19,7 @@ import { Application } from 'https://deno.land/x/oak@v11.1.0/mod.ts';
      // handle index.html not found 
      if ( 
          ctx.request.url.pathname === '/' || 
-         ctx.request.url.pathname === index.html' 
+         ctx.request.url.pathname ===' index.html' 
      ) { 
          ctx.response.status = 404; 
          ctx.response.body = 'Not found.\nSeems index.html is missing.'; 
