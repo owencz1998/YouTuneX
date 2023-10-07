@@ -19,7 +19,7 @@ app.use((ctx) => {
     // handle index.html not found
     if (
         ctx.request.url.pathname === '/' ||
-        ctx.request.url.pathname === '/index.html'
+        ctx.request.url.pathname === '/'
     ) {
         ctx.response.status = 404;
         ctx.response.body = 'Not found.\nSeems index.html is missing.';
