@@ -32,4 +32,4 @@ name: Deploy
          with: 
            project: "youtunexv1" 
            root: "./dist" 
-           entrypoint: "./"
+           entrypoint: "./manifest.json"
