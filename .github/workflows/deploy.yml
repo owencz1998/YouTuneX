@@ -32,4 +32,4 @@ name: Deploy
          with: 
            project: "youtunexv1" 
            root: "./dist" 
-           entrypoint: "./server.ts"
+           entrypoint: "./worker.js"
